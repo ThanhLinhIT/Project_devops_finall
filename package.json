@@ -1,0 +1,26 @@
+{
+  "name": "quiz-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:env": "node scripts/check-env.js",
+    "setup:db": "node scripts/setup-db.js",
+    "setup:secrets": "node scripts/setup-secrets.js",
+    "setup:all": "npm run check:env && npm run setup:db && npm run setup:secrets",
+    "dev:backend": "cd backend  && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test:backend": "cd backend  && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "lint:backend": "cd backend  && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "build:frontend": "cd frontend && npm run build",
+    "health:check": "node scripts/health-check.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.6.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.0"
+  }
+}
