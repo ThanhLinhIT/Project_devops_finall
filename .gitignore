@@ -22,3 +22,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Report & script files (không commit vào repo)
+*.docx
+generate_report.py
